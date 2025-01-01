@@ -1,0 +1,602 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", serif;
+  font-style: normal;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Header styling */
+header {
+  background-color: #000000;
+  height: 90px;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* navbaar styling */
+li {
+  display: inline-block;
+  margin: 15px;
+}
+
+li > a {
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.border-li {
+  border-radius: 35px;
+  border: 1px solid #fff;
+  padding: 12px 9.5px 12px 9.5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.order {
+  background-color: #ed1c24;
+  border-radius: 35px;
+  text-align: center;
+  border: 1px solid #ed1c24;
+  padding: 10px 10.5px 12px 10.5px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  height: 50px; /* 
+*/
+}
+
+.fa-solid {
+  font-size: 20px;
+}
+/* slider styling */
+
+.slider {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden; /* Prevent images from overflowing */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 85%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Fit container without overflow */
+  object-fit: cover;
+}
+/* slider indicators */
+.indicators {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.indicators button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 15px;
+  height: 3px;
+  margin: 0 5px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+
+.indicators .active {
+  background-color: white;
+}
+
+/* product section means different vilage resturant */
+.product-brand-section {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0px 15px 0px 15px;
+  padding-top: 70px;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+.container-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-custom-heading > h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.logo-text-bold {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: none;
+}
+
+.main-custom-heading > p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.product-brand-main {
+  margin: 40px auto;
+  padding: auto;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.slick-slide {
+  background-color: #fff;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: #ccc;
+}
+
+.brand_btn_holds {
+  position: relative;
+  left: 30%;
+  top: 50%;
+  margin: 5px;
+}
+
+.product-btn {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* resturant franchise flex */
+
+.resturant_franchise {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  background-color: #1d1c1cf5;
+}
+.franchise_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-custom-heading-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-custom-heading-two > h2 {
+  color: #fff;
+  padding: 10px;
+}
+
+.main-custom-heading-two > p {
+  color: #cccccc;
+  margin: -20px;
+  font-size: 1rem;
+}
+
+.spacing {
+  letter-spacing: 7px;
+  word-spacing: 5px;
+  font-size: larger;
+}
+.snp_right_side_one {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.row_custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.row_custom > small {
+  color: red;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.row_custom > h3 {
+  color: #fff;
+  font-size: 2.1rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row_custom > p {
+  color: #fff;
+  padding: px;
+  margin-top: 10px;
+}
+
+/* .row_custom > a{
+    
+    
+    text-decoration: none;
+    
+    } */
+
+.border-a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  width: 50%;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.row_custom > p > a {
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.logo-text-hold-second {
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+/* Express franchise styling */
+
+.express-container {
+  position: relative;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.location {
+  color: red;
+  font-size: 0.9em;
+  margin: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.express-container > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 400;
+}
+.logo-text {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.express-heading {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.logo-text1 {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+.card > p {
+  color: #ccccccdc;
+  padding: 0px;
+}
+
+.fa-solid {
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.card > a {
+  margin-top: 30px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 70px;
+}
+.background {
+  position: absolute;
+  top: 0%;
+  left: 19%;
+}
+
+/* village section styling  */
+.village-section {
+  background-color: #121010d8;
+  width: 100%;
+  height: auto;
+}
+.village-heading {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.village-image > img {
+  width: 700px;
+  margin: 0px 20px 20px 20px;
+}
+.village-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.village-content-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-village {
+  color: red;
+  letter-spacing: 7px;
+  font-size: 20px;
+}
+.logo-text-village {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.village-content-flex > h3 {
+  color: white;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.village-para {
+  color: white;
+  /* font-size: 1rem; */
+}
+
+.village-button {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding: 8px 20px;
+  background-color: rgba(27, 160, 27, 0.966);
+  color: #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.village-button:hover {
+  background-color: rgb(32, 31, 31);
+  border: 2px solid rgba(27, 160, 27, 0.966);
+}
+
+/* comming soon franchise */
+
+.franchise-express-section {
+  /* background-color: white; */
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+.logo-text {
+  color: #fff;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card-franchise {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(29.33% - 20px);
+  text-align: center;
+}
+.card-franchise img {
+  width: 50px;
+  margin: 25px;
+  /* height: 200px; */
+  /* object-fit: cover; */
+  /* border-top-left-radius: 8px; */
+  /* border-top-right-radius: 8px; */
+}
+.card-content {
+  padding: 15px;
+}
+small {
+  color: red;
+  display: block;
+  margin: 5px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+h4 {
+  /* margin: 0 0 10px 0; */
+  color: #000000;
+  font-weight: 300;
+}
+p {
+  margin: 0;
+  color: #333;
+}
+.logo-text-soon {
+  color: #000000;
+  font-size: 2rem;
+}
+
+/* Social feed styling */
+
+.socialFeed {
+  width: 100%;
+  height: auto;
+}
+
+.insta_feed_heading {
+  text-align: center;
+  color: #544c4c;
+  font-size: 2rem;
+  letter-spacing: 7px;
+}
+.social-container {
+  text-decoration: none;
+  display: flex;
+}
+
+/* Footer styling */
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #0d0d0d;
+  padding: 50px;
+}
+.sect1 {
+  width: 50%;
+  margin: 30px;
+}
+.footer-logo > img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.sect1para > p {
+  line-height: 25px;
+  color: #fff;
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 20%;
+}
+.site-links > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px;
+}
+
+.contact-us {
+  width: 20%;
+}
+.footer-heading {
+  color: #fff;
+  font-weight: 500px;
+}
+
+.footer-subheading {
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+.para-white {
+  color: #ccc;
+  padding: 5px;
+}
+.bg-red {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* background-color: #ed1c24; */
+  color: #ed1c24;
+  font-size: 2rem;
+}
+
+.app-icon {
+  margin-bottom: 20px;
+}
+.footer-end {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-end > p {
+  color: #fff;
+  letter-spacing: 2px;
+}
+.space1 {
+  margin-left: 30px;
+}
+.space2 {
+  margin-right: 30px;
+}
+
+.footer-space {
+  position: relative;
+}
+.footer-back {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+}
+
+.footer-back > img {
+  opacity: 0.3;
+}
